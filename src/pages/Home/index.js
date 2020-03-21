@@ -11,8 +11,8 @@ export default function Home() {
           src="https://static.netshoes.com.br/produtos/tenis-nike-downshifter-9-masculino/26/HZM-1276-026/HZM-1276-026_zoom2.jpg?ts=1584667533&ims=326x"
           alt="tênis"
         />
-        <strong>Shoes :)</strong>
-        <span>R$ 1112,05</span>
+        <strong>Black Nike Shoes</strong>
+        <span>$1112,05</span>
         <button type="button">
           <div>
             <MdAddShoppingCart size={16} color="#fff" /> 3
@@ -26,8 +26,8 @@ export default function Home() {
           src="https://static.netshoes.com.br/produtos/tenis-nike-downshifter-9-masculino/26/HZM-1276-026/HZM-1276-026_zoom2.jpg?ts=1584667533&ims=326x"
           alt="tênis"
         />
-        <strong>Shoes :)</strong>
-        <span>R$ 1112,05</span>
+        <strong>Black Nike Shoes</strong>
+        <span>$1112,05</span>
         <button type="button">
           <div>
             <MdAddShoppingCart size={16} color="#fff" /> 3
@@ -41,8 +41,8 @@ export default function Home() {
           src="https://static.netshoes.com.br/produtos/tenis-nike-downshifter-9-masculino/26/HZM-1276-026/HZM-1276-026_zoom2.jpg?ts=1584667533&ims=326x"
           alt="tênis"
         />
-        <strong>Shoes :)</strong>
-        <span>R$ 1112,05</span>
+        <strong>Black Nike Shoes</strong>
+        <span>$1112,05</span>
         <button type="button">
           <div>
             <MdAddShoppingCart size={16} color="#fff" /> 3
@@ -56,8 +56,8 @@ export default function Home() {
           src="https://static.netshoes.com.br/produtos/tenis-nike-downshifter-9-masculino/26/HZM-1276-026/HZM-1276-026_zoom2.jpg?ts=1584667533&ims=326x"
           alt="tênis"
         />
-        <strong>Shoes :)</strong>
-        <span>R$ 1112,05</span>
+        <strong>Black Nike Shoes</strong>
+        <span>$1112,05</span>
         <button type="button">
           <div>
             <MdAddShoppingCart size={16} color="#fff" /> 3
@@ -71,8 +71,8 @@ export default function Home() {
           src="https://static.netshoes.com.br/produtos/tenis-nike-downshifter-9-masculino/26/HZM-1276-026/HZM-1276-026_zoom2.jpg?ts=1584667533&ims=326x"
           alt="tênis"
         />
-        <strong>Shoes :)</strong>
-        <span>R$ 1112,05</span>
+        <strong>Black Nike Shoes</strong>
+        <span>$1112,05</span>
         <button type="button">
           <div>
             <MdAddShoppingCart size={16} color="#fff" /> 3
