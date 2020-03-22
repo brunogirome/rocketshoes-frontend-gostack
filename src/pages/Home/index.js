@@ -46,7 +46,7 @@ class Home extends Component {
               onClick={() => this.handleAddProduct(product)}
             >
               <div>
-                <MdAddShoppingCart size={16} color="#fff" />3
+                <MdAddShoppingCart size={16} color="#fff" /> 3
               </div>
               <span>ADD TO CART</span>
             </button>
