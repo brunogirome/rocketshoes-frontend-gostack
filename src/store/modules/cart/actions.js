@@ -1,5 +1,12 @@
-export function addToCart(product) {
-  return { type: '@cart/ADD', product };
+// Relacionado ao Redux-Saga:
+// Essa primeira function faz o redux-saga buscar os dados na api, e então,
+// dentro do método do saga, é disparado o 'addToCartSucess'
+export function addToCartRequest(id) {
+  return { type: '@cart/ADD_REQUEST', id };
+}
+
+export function addToCartSucess(product) {
+  return { type: '@cart/ADD_SUCCESS', product };
 }
 
 export function removeFromCart(id) {

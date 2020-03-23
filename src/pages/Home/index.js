@@ -25,10 +25,10 @@ class Home extends Component {
     this.setState({ products: data });
   }
 
-  handleAddProduct = product => {
-    const { addToCart } = this.props;
+  handleAddProduct = id => {
+    const { addToCartRequest } = this.props;
 
-    addToCart(product);
+    addToCartRequest(id);
   };
 
   render() {
@@ -44,7 +44,7 @@ class Home extends Component {
             <span>{product.formattedPrice}</span>
             <button
               type="button"
-              onClick={() => this.handleAddProduct(product)}
+              onClick={() => this.handleAddProduct(product.id)}
             >
               <div>
                 <MdAddShoppingCart size={16} color="#fff" />
@@ -60,6 +60,21 @@ class Home extends Component {
 }
 
 const mapStateToProps = state => ({
+  // Reduce: faz que com um vetor retorne apenas um valor tradando os dados
+  // do mesmo
+  // - amount: valor que será retornado. Ele é iniciado pelo valor que vai como
+  // segundo parâmetro da função
+  // - product: valor da item atual do array
+  //
+  // Detalhe: amount[product.id] é uma maneira de atribuir uma chave a um item
+  // do objeto como um número, exemplo:
+  //
+  // const Yumi = { id: 13, name: 'Yumi'};
+  // Yumi[7] = 'Key as value';
+  //
+  // Neste caso, objeto Yumi receberá uma propriedade "7" com o valor
+  // 'Key as value'. Se eu tentar acessar Yumi[7], vou receber a tal string
+  // como retorno
   amount: state.cart.reduce((amount, product) => {
     amount[product.id] = product.amount;
     return amount;

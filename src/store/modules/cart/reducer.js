@@ -1,8 +1,10 @@
+// Lib que permite editar variáveis imutáveis do react, onde o primeiro
+// parâmetro é o estado original, e o segundo é uma cópia livre para edição
 import produce from 'immer';
 
 export default function cart(state = [], action) {
   switch (action.type) {
-    case '@cart/ADD':
+    case '@cart/ADD_SUCCESS': {
       return produce(state, draft => {
         const productIndex = draft.findIndex(p => p.id === action.product.id);
         if (productIndex >= 0) {
@@ -11,6 +13,7 @@ export default function cart(state = [], action) {
           draft.push({ ...action.product, amount: 1 });
         }
       });
+    }
     case '@cart/REMOVE':
       return produce(state, draft => {
         const productIndex = draft.findIndex(p => p.id === action.id);
