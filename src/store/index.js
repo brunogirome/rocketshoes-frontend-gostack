@@ -4,7 +4,13 @@ import createSagaMiddleware from 'redux-saga';
 import rootReducer from './modules/rootReducer';
 import rootSaga from './modules/rootSaga';
 
-const sagaMiddleware = createSagaMiddleware();
+const sagaMonitor =
+  process.env.NODE_ENV === 'development'
+    ? console.tron.createSagaMonitor()
+    : null;
+const sagaMiddleware = createSagaMiddleware({
+  sagaMonitor,
+});
 
 // O compose faz o tron conversar o Saga, aparentemente 🤔
 // E o enhancer parece ser um conector, um meio de campo pro store do Redux
