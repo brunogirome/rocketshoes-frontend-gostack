@@ -16,7 +16,7 @@ function App() {
   return (
     <Provider store={store}>
       {/**
-       * Agora, o Reaect Router Dom irá ler informações da lib history, e irá
+       * Agora, o React Router Dom irá ler informações da lib history, e irá
        * fazer a navegação de telas
        */}
       <Router history={history}>
